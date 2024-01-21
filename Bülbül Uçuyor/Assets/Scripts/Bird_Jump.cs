@@ -6,6 +6,7 @@ public class Bird_Jump : MonoBehaviour
 {
     public float Velocity = 1f;
     public float Rotation_Speed = 10f;
+    public bool isDead;
     public Rigidbody2D rb2D;
     void Update()
     {
