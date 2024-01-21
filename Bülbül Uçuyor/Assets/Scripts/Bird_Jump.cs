@@ -8,13 +8,13 @@ public class Bird_Jump : MonoBehaviour
     float time;
     float timeDelay;
 
-    public float y = .15f;
+    private float y = 4.78f;
     public float Rotation_Speed = 10f;
     public Rigidbody2D rb2D;
     void Start()
     {
         time = 0f;
-        timeDelay = 0.22f;
+        timeDelay = 0.2f;
     }
     void Update()
     {
@@ -29,6 +29,11 @@ public class Bird_Jump : MonoBehaviour
             rb2D.velocity = Vector2.up * Velocity;
         
         }
+    }
+    if (transform.position.y > 4.78f)
+    {
+        transform.position = new Vector2(0,y);
+        rb2D.velocity = Vector2.down * Velocity/2;
     }
     }
     private void FixedUpdate()
