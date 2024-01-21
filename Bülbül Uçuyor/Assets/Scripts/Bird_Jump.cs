@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bird_Jump : MonoBehaviour
 {
+    public bool isDead;
     public float velocity = 1f;
     public float _rotationspeed = 10f;
     public Rigidbody2D rb2D;
