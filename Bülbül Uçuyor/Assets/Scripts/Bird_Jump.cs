@@ -10,8 +10,6 @@ public class Bird_Jump : MonoBehaviour
     private bool isdead = false;
     float time;
     float timeDelay;
-
-    private float y = 4.78f;
     public float Rotation_Speed = 10f;
     public Rigidbody2D rb2D;
     void Start()
@@ -37,7 +35,7 @@ public class Bird_Jump : MonoBehaviour
     }
     if (transform.position.y > 4.78f)
     {
-        transform.position = new Vector2(0,y);
+        transform.position = new Vector2(0,4.78f);
         rb2D.velocity = Vector2.down * Velocity/2;
     }
     }
@@ -49,7 +47,7 @@ public class Bird_Jump : MonoBehaviour
     {
     if(collision.gameObject.name == "Ceiling")
         {
-        transform.position = new Vector2(0,y);
+        transform.position = new Vector2(0,4.78f);
         rb2D.velocity = Vector2.down * Velocity/2;
         }
     }
