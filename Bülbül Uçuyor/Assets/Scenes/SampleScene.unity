@@ -609,8 +609,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0004959852, y: -0.00019667826}
-  m_Size: {x: 0.16348968, y: 0.11200417}
+  m_Offset: {x: -0.00039683294, y: -0.0006243251}
+  m_Size: {x: 0.15025745, y: 0.10482671}
   m_Direction: 1
 --- !u!114 &1043122394
 MonoBehaviour:
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 1990031799}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -959,7 +959,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.005360186}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -970,7 +970,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.68, y: 0.56}
+  m_Size: {x: 1.68, y: 0.54927963}
   m_EdgeRadius: 0
 --- !u!95 &1990031799
 Animator:
@@ -982,7 +982,7 @@ Animator:
   m_GameObject: {fileID: 1990031794}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 831986b5c7109034bb33195a2edcfcc8, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
