@@ -21,6 +21,10 @@ public class Bird_Jump : MonoBehaviour
     }
     void Update()
     {
+    if(isdead)
+    {
+        Time.timeScale = 0f;
+    }
     time = time + 1f* Time.deltaTime;
     if(Input.GetMouseButtonDown(0))
     {
