@@ -557,6 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 6
+  isdead: 0
   Rotation_Speed: 5
   rb2D: {fileID: 1043122392}
 --- !u!1 &1799071972
@@ -622,6 +623,55 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1919224379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919224381}
+  - component: {fileID: 1919224380}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1919224380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919224379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0046585dc24a00418cea7ff259ea130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BothColumns: {fileID: 1609533611088036014, guid: 9f125241112d4044b9cc1b99e39cdb10, type: 3}
+  TopColumn: {fileID: 4368837629103342389, guid: 4e0ce770ebc315f4bb9799e09874d2d7, type: 3}
+  BottomColumn: {fileID: 5143236963051817818, guid: db20ebff29e43c448bab2db41a8aec2e, type: 3}
+  birdsc: {fileID: 1043122394}
+  time: 3
+--- !u!4 &1919224381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919224379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.423618, y: 0.74251735, z: -0.045111228}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1103,7 +1153,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1212,3 +1262,4 @@ SceneRoots:
   - {fileID: 1992611195}
   - {fileID: 1799071975}
   - {fileID: 2080029536}
+  - {fileID: 1919224381}

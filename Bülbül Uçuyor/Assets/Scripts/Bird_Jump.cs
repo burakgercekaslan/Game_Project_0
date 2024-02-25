@@ -7,7 +7,7 @@ using UnityEngine;
 public class Bird_Jump : MonoBehaviour
 {
     public float Velocity = 1f;
-    private bool isdead = false;
+    public bool isdead = false;
     float time;
     float timeDelay;
     public float Rotation_Speed = 10f;

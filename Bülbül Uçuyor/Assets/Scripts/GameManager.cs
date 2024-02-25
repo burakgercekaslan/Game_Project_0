@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = 0;
-        TEXT.text = score.ToString()
+        TEXT.text = score.ToString();
     }
 
     // Update is called once per frame
@@ -22,6 +22,6 @@ public class GameManager : MonoBehaviour
     public void UpdateScore()
     {
         score++;
-        TEXT.text = score.ToString()
+        TEXT.text = score.ToString();
     }
 }
