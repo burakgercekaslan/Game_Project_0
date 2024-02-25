@@ -12,6 +12,7 @@ public class Bird_Jump : MonoBehaviour
     float timeDelay;
     public float Rotation_Speed = 10f;
     public Rigidbody2D rb2D;
+    public GameManager managerGame;
     void Start()
     {
         time = 0f;
@@ -59,4 +60,11 @@ public class Bird_Jump : MonoBehaviour
         Time.timeScale = 0f;
         }
     }  
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "ScoreArea")
+        {
+            managerGame.UpdateScore()
+        }
+    }
 }
