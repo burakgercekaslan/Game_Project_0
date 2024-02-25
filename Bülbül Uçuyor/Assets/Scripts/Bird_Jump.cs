@@ -51,6 +51,10 @@ public class Bird_Jump : MonoBehaviour
         transform.position = new Vector2(0,4.78f);
         rb2D.velocity = Vector2.down * Velocity/2;
         }
+    else if (collision.gameObject.name == "ScoreArea")
+         {
+            managerGame.UpdateScore();
+         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -60,11 +64,4 @@ public class Bird_Jump : MonoBehaviour
         Time.timeScale = 0f;
         }
     }  
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.name == "ScoreArea")
-        {
-            managerGame.UpdateScore()
-        }
-    }
 }
